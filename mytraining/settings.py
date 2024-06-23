@@ -155,5 +155,5 @@ INTERNAL_IPS = [
 
 AUTH_USER_MODEL = "app.User"
 
-LOGOUT_REDIRECT_URL = "/accounts/login/"
+LOGOUT_REDIRECT_URL = "/"
 LOGIN_REDIRECT_URL = "/"
