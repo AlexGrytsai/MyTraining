@@ -1,54 +1,45 @@
-{% extends "layouts/base-fullscreen.html" %}
+{% extends "layouts/base.html" %}
 {% load bootstrap4 %}
 {% load crispy_forms_filters %}
 {% block title %} Sign IN {% endblock %}
 
-<!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
 
-  <main>
-
-    {% include 'includes/preloader.html' %}
-
-    <!-- Section -->
-    <section
-        class="min-vh-100 d-flex align-items-center section-image overlay-soft-dark"
-        data-background="/static/assets/img/pages/form-image-gym.jpg">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 d-flex align-items-center justify-content-center">
-            <div
-                class="signin-inner my-4 my-lg-0 bg-white shadow-soft border rounded border-gray-300 p-4 p-lg-5 w-100 fmxw-500">
-              <div class="text-center text-md-center mb-4 mt-md-0">
-                <h1 class="mb-0 h3">
-                  <a href="/" target="_blank">My Training</a> - Login
-                </h1>
-              </div>
-              <form method="post" class="form">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <div class="text-center">
-                  <button type="submit"
-                          class="btn btn-primary my-4 text-white">
-                    Sign IN
-                  </button>
-                  <div>
-                    Don't have an account yet?
-                    <a href="{% url 'app:user-registration' %}" class="text-blue">
-                      <strong>Sign UP</strong>
-                    </a>
-                  </div>
-                </div>
-              </form>
+  <!-- Section -->
+  <section
+      class="classes-section spad min-vh-100 d-flex align-items-center overlay-soft-dark">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <div
+              class="signin-inner my-4 my-lg-0 bg-white shadow-soft border rounded border-gray-300 p-4 p-lg-5 w-auto fmxw-500">
+            <div class="text-center text-md-center mb-4 mt-md-0">
+              <h1 class="mb-0 h3">
+                Sign In
+              </h1>
             </div>
+            <form method="post" class="form">
+              {% csrf_token %}
+              {{ form|crispy }}
+              <div class="text-center">
+                <button type="submit"
+                        class="btn btn-outline-dark my-4">
+                  Sign In
+                </button>
+                <div>
+                  Don't have an account yet?
+                  <a href="{% url 'app:signup' %}" style="color: #0a0a0a">
+                    <strong>Sign Up</strong>
+                  </a>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </section>
-
-  </main>
+    </div>
+  </section>
 
 {% endblock content %}
 

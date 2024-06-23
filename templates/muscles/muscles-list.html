@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <!-- Primary Meta Tags -->
+  <title>
+    Muscles List
+  </title>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Fontawesome -->
+  <link type="text/css"
+        href="/static/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+        rel="stylesheet">
+
+  <!-- Pixel CSS -->
+  <link type="text/css" href="/static/assets/css/pixel.css" rel="stylesheet">
+
+</head>
+<body>
+
+{% include 'includes/navigation.html' %}
+
+<main>
+
+  {% include 'includes/preloader.html' %}
+
+        <div class=" section section-sm pb-0 mb-n4">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <a class="btn btn-primary"
+                 href="{% url 'app:muscles-add' %}">Add Muscle</a>
+                  <h3 class="text-center">Tables</h3>
+                </div>
+              </div>
+          </div>
+
+          <!-- End of Hero -->
+          <div class="section section-md">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="mb-5">
+                    <div class="mb-4">
+                      <span class="h5">Hoverable rows</span>
+                    </div>
+                    <table class="table table-hover">
+                      <tr>
+                        <th scope="col" id="class3">Class</th>
+                        <th scope="col" id="teacher3">Teacher</th>
+                        <th scope="col" id="males3">Males</th>
+                        <th scope="col" id="females3">Females</th>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="firstyear3" rowspan="2">First
+                          Year
+                        </th>
+                        <th scope="row" id="Bolter3"
+                            headers="firstyear3 teacher3">D. Bolter
+                        </th>
+                        <td headers="firstyear3 Bolter3 males3">5</td>
+                        <td headers="firstyear3 Bolter3 females3">4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="Cheetham3"
+                            headers="firstyear3 teacher3">A. Cheetham
+                        </th>
+                        <td headers="firstyear3 Cheetham3 males3">7</td>
+                        <td headers="firstyear3 Cheetham3 females3">9</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="secondyear3" rowspan="3">Second
+                          Year
+                        </th>
+                        <th scope="row" id="Lam3"
+                            headers="secondyear3 teacher3">M. Lam
+                        </th>
+                        <td headers="secondyear3 Lam3 males3">3</td>
+                        <td headers="secondyear3 Lam3 females3">9</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="Crossy3"
+                            headers="secondyear3 teacher3">S. Crossy
+                        </th>
+                        <td headers="secondyear3 Crossy3 males3">4</td>
+                        <td headers="secondyear3 Crossy3 females3">3</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="Forsyth3"
+                            headers="secondyear3 teacher3">A. Forsyth
+                        </th>
+                        <td headers="secondyear3 Forsyth3 males3">6</td>
+                        <td headers="secondyear3 Forsyth3 females3">9</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <section class="section section-lg bg-tertiary">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-white">
+                  <h2 class="h1 font-weight-light">Notable <span
+                      class="font-weight-bold">features</span></h2>
+                  <p class="lead">You get all Bootstrap components fully
+                    customized. Besides, you receive numerous
+                    plugins out of the box and ready to use</p>
+                </div>
+              </div>
+              <div class="row mt-6 text-white">
+                <div class="col-md-4">
+                  <!-- Icon box -->
+                  <div class="icon-box text-center mb-5">
+                    <div class="icon">
+                      <span class="fab fa-bootstrap"></span>
+                    </div>
+                    <h3 class="h5 my-3">Bootstrap 5</h3>
+                    <p>A responsive and mobile-first theme built with the
+                      world's most popular CSS framework</p>
+                  </div>
+                  <!-- End of Icon box -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Icon box -->
+                  <div class="icon-box text-center mb-5">
+                    <div class="icon">
+                      <span class="fab fa-sass"></span>
+                    </div>
+                    <h3 class="h5 my-3">Build with Sass</h3>
+                    <p>Change one variable and the theme adapts. Colors, fonts,
+                      sizes, buttons... you name it
+                    </p>
+                  </div>
+                  <!-- End of Icon box -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Icon box -->
+                  <div class="icon-box text-center mb-5">
+                    <div class="icon">
+                      <span class="fas fa-mobile-alt"></span>
+                    </div>
+                    <h3 class="h5 my-3">Responsive Design</h3>
+                    <p>Did you know 53% of the world web traffic is mobile?
+                      Pixel is fully responsive and mobile
+                      first</p>
+                  </div>
+                  <!-- End of Icon box -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Icon box -->
+                  <div class="icon-box text-center mb-5">
+                    <div class="icon">
+                      <span class="fas fa-puzzle-piece"></span>
+                    </div>
+                    <h3 class="h5 my-3">Modular approach</h3>
+                    <p>Nicely customized components that can be reused anytime
+                      and anywhere in your project</p>
+                  </div>
+                  <!-- End of Icon box -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Icon box -->
+                  <div class="icon-box text-center mb-5">
+                    <div class="icon">
+                      <span class="fab fa-gulp"></span>
+                    </div>
+                    <h3 class="h5 my-3">Gulp & BrowserSync</h3>
+                    <p>With our custom Gulp commands & BrowserSync we offer a
+                      seemless and fast workflow for
+                      your project</p>
+                  </div>
+                  <!-- End of Icon box -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Icon box -->
+                  <div class="icon-box text-center mb-5">
+                    <div class="icon">
+                      <span class="fas fa-file-alt"></span>
+                    </div>
+                    <h3 class="h5 my-3">Well documented</h3>
+                    <p>Our kit is delivered with very detailed documentation,
+                      describing all components, styles
+                      and usages</p>
+                  </div>
+                  <!-- End of Icon box -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Icon box -->
+                  <div class="icon-box text-center">
+                    <div class="icon">
+                      <span class="fas fa-tachometer-alt"></span>
+                    </div>
+                    <h3 class="h5 my-3">Google PageSpeed</h3>
+                    <p>Pixel has 80+ scores on Google PageSpeed Insights to
+                      offer you and your clients a fast
+                      website
+                    </p>
+                  </div>
+                  <!-- End of Icon box -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Icon box -->
+                  <div class="icon-box text-center mb-5">
+                    <div class="icon">
+                      <span class="fas fa-image"></span>
+                    </div>
+                    <h3 class="h5 my-3">SVG illustrations</h3>
+                    <p>Photography and Illustration SVGs are included in the
+                      download package and are free to
+                      use
+                    </p>
+                  </div>
+                  <!-- End of Icon box -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Icon box -->
+                  <div class="icon-box text-center mb-5">
+                    <div class="icon">
+                      <img class="navbar-brand-dark" style="height: 37px;"
+                           src="/static/assets/img/brand/light.svg"
+                           alt="Pixel logo">
+                    </div>
+                    <h3 class="h5 my-3">Every pixel matters</h3>
+                    <p>We crafted each component with great care so that no
+                      rouge pixel is left behind</p>
+                  </div>
+                  <!-- End of Icon box -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+</main>
+
+{% include 'includes/footer.html' %}
+
+{% include 'includes/scripts.html' %}
+
+</body>
+</html>
